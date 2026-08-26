@@ -372,6 +372,7 @@ h2 {
 .about-page-person {
   margin-top: 0;
   margin-bottom: 32px;
+  justify-content: flex-start;
 }
 
 .about-page-person .avatar-ring {
@@ -382,9 +383,9 @@ h2 {
 /* About columns */
 
 .about-tagline {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: var(--text-muted);
-  margin: 0 0 56px;
+  margin: 14px 0 56px;
 }
 
 .about-grid {
