@@ -362,6 +362,23 @@ h2 {
   box-shadow: 0 18px 40px -24px rgba(127, 232, 196, 0.35);
 }
 
+/* About page (standalone) */
+
+.about-page-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 16px;
+}
+
+.about-page-person {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.about-page-person .avatar-ring {
+  width: 96px;
+  height: 96px;
+}
+
 /* About columns */
 
 .about-tagline {
@@ -699,7 +716,7 @@ h2 {
   margin-bottom: 8px;
 }
 
-.legal-page .back-link {
+.back-link {
   display: inline-block;
   margin-bottom: 32px;
   color: var(--text-muted);
@@ -707,7 +724,7 @@ h2 {
   font-size: 0.9rem;
 }
 
-.legal-page .back-link:hover {
+.back-link:hover {
   color: var(--accent);
 }
 
