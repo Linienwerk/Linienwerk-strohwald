@@ -438,7 +438,8 @@ h2 {
 .process-photos img {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--bg-panel);
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
