@@ -1,14 +1,14 @@
 :root {
-  --bg: #0b0b0c;
-  --bg-panel: #15171a;
-  --bg-panel-alt: #1b1d21;
-  --text: #f5f5f4;
-  --text-muted: #9a9a9e;
-  --text-faint: #6c6c70;
+  --bg: #16130f;
+  --bg-panel: #1f1a15;
+  --bg-panel-alt: #26201a;
+  --text: #f4efe7;
+  --text-muted: #a99d8c;
+  --text-faint: #786e60;
   --accent: #7fe8c4;
   --accent-soft: #a8f2d9;
-  --accent-dark: #0b0b0c;
-  --border: rgba(255, 255, 255, 0.09);
+  --accent-dark: #16130f;
+  --border: rgba(240, 220, 195, 0.1);
   --border-hover: rgba(127, 232, 196, 0.35);
   --max-width: 1100px;
   --radius: 14px;
@@ -62,7 +62,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(11, 11, 12, 0.75);
+  background: rgba(22, 19, 15, 0.75);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
@@ -843,7 +843,7 @@ h2 {
     flex-direction: column;
     gap: 2px;
     padding: 8px 24px 20px;
-    background: rgba(11, 11, 12, 0.97);
+    background: rgba(22, 19, 15, 0.97);
     border-bottom: 1px solid var(--border);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
