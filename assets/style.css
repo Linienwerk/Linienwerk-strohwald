@@ -5,11 +5,11 @@
   --text: #f4efe7;
   --text-muted: #a99d8c;
   --text-faint: #786e60;
-  --accent: #7fe8c4;
-  --accent-soft: #a8f2d9;
+  --accent: #b3d17e;
+  --accent-soft: #d3e6ac;
   --accent-dark: #16130f;
   --border: rgba(240, 220, 195, 0.1);
-  --border-hover: rgba(127, 232, 196, 0.35);
+  --border-hover: rgba(179, 209, 126, 0.35);
   --max-width: 1100px;
   --radius: 14px;
   font-size: 16px;
@@ -27,11 +27,11 @@ body {
   margin: 0;
   background-color: var(--bg);
   background-image:
-    repeating-linear-gradient(115deg, rgba(127, 232, 196, 0.055) 0px, rgba(127, 232, 196, 0.055) 1px, transparent 1px, transparent 130px),
-    radial-gradient(1100px circle at 12% -8%, rgba(127, 232, 196, 0.14), transparent 60%),
-    radial-gradient(900px circle at 100% 18%, rgba(127, 232, 196, 0.08), transparent 55%),
-    radial-gradient(850px circle at 12% 78%, rgba(127, 232, 196, 0.07), transparent 55%),
-    radial-gradient(700px circle at 90% 95%, rgba(127, 232, 196, 0.06), transparent 55%);
+    repeating-linear-gradient(115deg, rgba(179, 209, 126, 0.055) 0px, rgba(179, 209, 126, 0.055) 1px, transparent 1px, transparent 130px),
+    radial-gradient(1100px circle at 12% -8%, rgba(179, 209, 126, 0.14), transparent 60%),
+    radial-gradient(900px circle at 100% 18%, rgba(179, 209, 126, 0.08), transparent 55%),
+    radial-gradient(850px circle at 12% 78%, rgba(179, 209, 126, 0.07), transparent 55%),
+    radial-gradient(700px circle at 90% 95%, rgba(179, 209, 126, 0.06), transparent 55%);
   background-attachment: fixed, fixed, fixed, fixed, fixed;
   background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   color: var(--text);
@@ -175,12 +175,12 @@ a {
 .btn-primary {
   background: linear-gradient(135deg, var(--accent-soft), var(--accent));
   color: var(--accent-dark);
-  box-shadow: 0 0 0 1px rgba(127, 232, 196, 0.18), 0 10px 26px -14px rgba(127, 232, 196, 0.55);
+  box-shadow: 0 0 0 1px rgba(179, 209, 126, 0.18), 0 10px 26px -14px rgba(179, 209, 126, 0.55);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 0 0 1px rgba(127, 232, 196, 0.3), 0 14px 34px -12px rgba(127, 232, 196, 0.6);
+  box-shadow: 0 0 0 1px rgba(179, 209, 126, 0.3), 0 14px 34px -12px rgba(179, 209, 126, 0.6);
 }
 
 .btn-small {
@@ -191,14 +191,14 @@ a {
 .btn-outline {
   background: transparent;
   color: var(--accent);
-  border: 1px solid rgba(127, 232, 196, 0.4);
+  border: 1px solid rgba(179, 209, 126, 0.4);
   box-shadow: none;
 }
 
 .btn-outline:hover {
   transform: translateY(-1px);
   border-color: var(--accent);
-  background: rgba(127, 232, 196, 0.08);
+  background: rgba(179, 209, 126, 0.08);
   box-shadow: none;
 }
 
@@ -259,7 +259,7 @@ h2 {
   position: absolute;
   inset: -20% -10% auto -10%;
   height: 480px;
-  background: radial-gradient(ellipse at top, rgba(127, 232, 196, 0.16), transparent 70%);
+  background: radial-gradient(ellipse at top, rgba(179, 209, 126, 0.16), transparent 70%);
   pointer-events: none;
 }
 
@@ -309,7 +309,7 @@ h2 {
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  box-shadow: 0 0 0 4px rgba(127, 232, 196, 0.08);
+  box-shadow: 0 0 0 4px rgba(179, 209, 126, 0.08);
 }
 
 .avatar-ring svg {
@@ -406,7 +406,7 @@ h2 {
 .contact-card:hover {
   transform: translateY(-3px);
   border-color: var(--border-hover);
-  box-shadow: 0 18px 40px -24px rgba(127, 232, 196, 0.35);
+  box-shadow: 0 18px 40px -24px rgba(179, 209, 126, 0.35);
 }
 
 /* About page (standalone) */
@@ -599,7 +599,7 @@ h2 {
   color: var(--accent-dark);
   font-size: 1rem;
   font-weight: 800;
-  box-shadow: 0 8px 22px -8px rgba(127, 232, 196, 0.55), 0 0 0 4px var(--bg-panel);
+  box-shadow: 0 8px 22px -8px rgba(179, 209, 126, 0.55), 0 0 0 4px var(--bg-panel);
   margin-bottom: 18px;
 }
 
@@ -637,7 +637,7 @@ h2 {
 
 .reach-banner {
   background:
-    linear-gradient(90deg, transparent, rgba(127, 232, 196, 0.07), transparent),
+    linear-gradient(90deg, transparent, rgba(179, 209, 126, 0.07), transparent),
     var(--bg-panel-alt);
   padding: 40px 0;
   text-align: center;
@@ -666,7 +666,7 @@ h2 {
   inset: 0 8% auto 8%;
   top: 10%;
   height: 70%;
-  background: radial-gradient(ellipse at center, rgba(127, 232, 196, 0.14), transparent 72%);
+  background: radial-gradient(ellipse at center, rgba(179, 209, 126, 0.14), transparent 72%);
   pointer-events: none;
   z-index: -1;
 }
