@@ -485,7 +485,7 @@ h2 {
 }
 
 .stat-tile .stat-value {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--accent);
   line-height: 1;
