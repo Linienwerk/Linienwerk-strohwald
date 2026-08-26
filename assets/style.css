@@ -470,13 +470,6 @@ h2 {
   font-size: 0.98rem;
 }
 
-.check-list li svg {
-  width: 18px;
-  height: 18px;
-  color: var(--accent);
-  flex-shrink: 0;
-  margin-top: 3px;
-}
 
 /* Stats */
 
@@ -528,13 +521,6 @@ h2 {
   font-size: 0.96rem;
 }
 
-.results-list li svg {
-  width: 18px;
-  height: 18px;
-  color: var(--accent);
-  flex-shrink: 0;
-  margin-top: 3px;
-}
 
 /* Process steps */
 
