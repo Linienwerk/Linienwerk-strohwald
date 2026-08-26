@@ -500,10 +500,28 @@ h2 {
 }
 
 .process-grid {
+  position: relative;
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin-bottom: 24px;
+}
+
+.process-grid::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent) 20%, var(--accent) 80%, transparent);
+  opacity: 0.4;
+}
+
+@media (max-width: 640px) {
+  .process-grid::before {
+    display: none;
+  }
 }
 
 .process-photos {
@@ -526,11 +544,20 @@ h2 {
 }
 
 .process-number {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: 0.05em;
-  margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-soft), var(--accent));
+  color: var(--accent-dark);
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: 0 8px 22px -8px rgba(127, 232, 196, 0.55), 0 0 0 4px var(--bg-panel);
+  margin-bottom: 18px;
 }
 
 .process-card h3 {
