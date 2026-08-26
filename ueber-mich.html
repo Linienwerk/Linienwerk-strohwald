@@ -15,21 +15,31 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand">
-      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-        <line x1="3" y1="7" x2="21" y2="7"/>
-        <line x1="3" y1="12" x2="15" y2="12"/>
-        <line x1="3" y1="17" x2="18" y2="17"/>
-      </svg>
-      <span class="brand-name">Linienwerk <strong>—</strong> Strohwald Engineering</span>
-    </a>
-    <nav class="main-nav">
+    <div class="header-start">
+      <button type="button" class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <line x1="3" y1="7" x2="21" y2="7"/>
+          <line x1="3" y1="12" x2="15" y2="12"/>
+          <line x1="3" y1="17" x2="18" y2="17"/>
+        </svg>
+        <span class="brand-name">Linienwerk <strong>—</strong> Strohwald Engineering</span>
+      </a>
+    </div>
+    <nav class="main-nav" id="main-nav">
       <a href="ueber-mich.html">Über mich</a>
       <a href="index.html#erfolge">Erfolge</a>
       <a href="index.html#prozess">Prozess</a>
       <a href="index.html#kontakt">Kontakt</a>
+      <a href="https://calendly.com/andre-linienwerk-strohwald/30min" class="nav-mobile-cta" target="_blank" rel="noopener">Strategiecheck buchen</a>
     </nav>
-    <a href="https://calendly.com/andre-linienwerk-strohwald/30min" class="btn btn-primary btn-small nav-cta" target="_blank" rel="noopener">Strategiecheck buchen</a>
+    <a href="https://calendly.com/andre-linienwerk-strohwald/30min" class="btn btn-outline btn-small nav-cta" target="_blank" rel="noopener">Strategiecheck buchen</a>
   </div>
 </header>
 
@@ -102,5 +112,6 @@
   </div>
 </footer>
 
+<script src="assets/nav.js" defer></script>
 </body>
 </html>
