@@ -585,23 +585,19 @@ h2 {
   }
 }
 
-.process-photos {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.process-photos img {
-  width: 100%;
-  height: 260px;
-  object-fit: contain;
-  background: var(--bg-panel);
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-}
-
 .process-card {
   padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.process-card-photo {
+  display: block;
+  width: calc(100% + 56px);
+  max-width: none;
+  margin: auto -28px -28px;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 
 .process-number {
@@ -628,7 +624,7 @@ h2 {
 
 .process-card ul {
   list-style: none;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   display: grid;
   gap: 10px;
