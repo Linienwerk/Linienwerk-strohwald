@@ -414,10 +414,33 @@ h2 {
 
 /* Process steps */
 
+.process-block {
+  margin-bottom: 48px;
+}
+
+.process-block:last-child {
+  margin-bottom: 0;
+}
+
 .process-grid {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-bottom: 24px;
+}
+
+.process-photos {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.process-photos img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
 }
 
 .process-card {
