@@ -220,6 +220,8 @@ h2 {
   position: relative;
   display: grid;
   gap: 40px;
+  justify-items: center;
+  text-align: center;
 }
 
 .hero-inner > * {
@@ -230,6 +232,8 @@ h2 {
   font-size: clamp(2rem, 4.4vw, 3.1rem);
   line-height: 1.15;
   max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-lead {
@@ -242,6 +246,7 @@ h2 {
   margin-top: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -289,6 +294,7 @@ h2 {
   gap: 16px;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-actions .hint {
