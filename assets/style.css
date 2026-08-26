@@ -298,8 +298,8 @@ h2 {
 }
 
 .hero-actions .hint {
-  color: var(--text-faint);
-  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-size: 1rem;
 }
 
 /* Line divider motif */
