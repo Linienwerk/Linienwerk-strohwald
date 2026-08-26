@@ -302,61 +302,6 @@ h2 {
   font-size: 1rem;
 }
 
-/* Marquee */
-
-.marquee {
-  overflow: hidden;
-  background: var(--bg-panel-alt);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 20px 0;
-}
-
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marquee-scroll 32s linear infinite;
-}
-
-.marquee-group {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.marquee-group span {
-  white-space: nowrap;
-}
-
-.marquee-group > span:not(.marquee-dot) {
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  padding: 0 18px;
-}
-
-.marquee-dot {
-  color: var(--accent);
-  font-size: 0.7rem;
-}
-
-@keyframes marquee-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
-  }
-}
-
 /* Line divider motif */
 
 .line-divider {
