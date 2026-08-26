@@ -1,13 +1,15 @@
 :root {
   --bg: #0b0b0c;
-  --bg-panel: #131315;
-  --bg-panel-alt: #17181a;
+  --bg-panel: #15171a;
+  --bg-panel-alt: #1b1d21;
   --text: #f5f5f4;
   --text-muted: #9a9a9e;
   --text-faint: #6c6c70;
   --accent: #7fe8c4;
+  --accent-soft: #a8f2d9;
   --accent-dark: #0b0b0c;
-  --border: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.09);
+  --border-hover: rgba(127, 232, 196, 0.35);
   --max-width: 1100px;
   --radius: 14px;
   font-size: 16px;
@@ -23,7 +25,15 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    repeating-linear-gradient(115deg, rgba(127, 232, 196, 0.055) 0px, rgba(127, 232, 196, 0.055) 1px, transparent 1px, transparent 130px),
+    radial-gradient(1100px circle at 12% -8%, rgba(127, 232, 196, 0.14), transparent 60%),
+    radial-gradient(900px circle at 100% 18%, rgba(127, 232, 196, 0.08), transparent 55%),
+    radial-gradient(850px circle at 12% 78%, rgba(127, 232, 196, 0.07), transparent 55%),
+    radial-gradient(700px circle at 90% 95%, rgba(127, 232, 196, 0.06), transparent 55%);
+  background-attachment: fixed, fixed, fixed, fixed, fixed;
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   color: var(--text);
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.55;
@@ -52,8 +62,9 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(11, 11, 12, 0.85);
-  backdrop-filter: blur(10px);
+  background: rgba(11, 11, 12, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -129,13 +140,14 @@ a {
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent-soft), var(--accent));
   color: var(--accent-dark);
+  box-shadow: 0 0 0 1px rgba(127, 232, 196, 0.18), 0 10px 26px -14px rgba(127, 232, 196, 0.55);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 30px -10px rgba(127, 232, 196, 0.5);
+  box-shadow: 0 0 0 1px rgba(127, 232, 196, 0.3), 0 14px 34px -12px rgba(127, 232, 196, 0.6);
 }
 
 .btn-small {
@@ -148,6 +160,7 @@ a {
 section {
   padding: 96px 0;
   border-bottom: 1px solid var(--border);
+  border-image: linear-gradient(90deg, transparent, var(--border) 25%, var(--border) 75%, transparent) 1;
 }
 
 section:last-of-type {
@@ -199,7 +212,7 @@ h2 {
   position: absolute;
   inset: -20% -10% auto -10%;
   height: 480px;
-  background: radial-gradient(ellipse at top, rgba(127, 232, 196, 0.12), transparent 70%);
+  background: radial-gradient(ellipse at top, rgba(127, 232, 196, 0.16), transparent 70%);
   pointer-events: none;
 }
 
@@ -244,6 +257,7 @@ h2 {
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
+  box-shadow: 0 0 0 4px rgba(127, 232, 196, 0.08);
 }
 
 .avatar-ring svg {
@@ -305,6 +319,43 @@ h2 {
   text-transform: uppercase;
 }
 
+/* Card surfaces (about, process, stats, contact) */
+
+.about-card,
+.process-card,
+.stat-tile,
+.contact-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0) 40%), var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card::before,
+.process-card::before,
+.stat-tile::before,
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent 75%);
+  opacity: 0.55;
+}
+
+.about-card:hover,
+.process-card:hover,
+.stat-tile:hover,
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+  box-shadow: 0 18px 40px -24px rgba(127, 232, 196, 0.35);
+}
+
 /* About columns */
 
 .about-tagline {
@@ -320,9 +371,6 @@ h2 {
 }
 
 .about-card {
-  background: var(--bg-panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
   padding: 32px;
 }
 
@@ -369,9 +417,6 @@ h2 {
 }
 
 .stat-tile {
-  background: var(--bg-panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
   padding: 28px;
 }
 
@@ -445,11 +490,7 @@ h2 {
 }
 
 .process-card {
-  background: var(--bg-panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
   padding: 28px;
-  position: relative;
 }
 
 .process-number {
@@ -492,9 +533,13 @@ h2 {
 /* Reach banner */
 
 .reach-banner {
-  background: var(--bg-panel-alt);
+  background:
+    linear-gradient(90deg, transparent, rgba(127, 232, 196, 0.07), transparent),
+    var(--bg-panel-alt);
   padding: 40px 0;
   text-align: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .reach-banner p {
@@ -509,6 +554,18 @@ h2 {
 
 .cta-section {
   text-align: center;
+  position: relative;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0 8% auto 8%;
+  top: 10%;
+  height: 70%;
+  background: radial-gradient(ellipse at center, rgba(127, 232, 196, 0.14), transparent 72%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .cta-section h2 {
@@ -530,6 +587,7 @@ h2 {
 
 .quote-section {
   text-align: center;
+  position: relative;
 }
 
 .quote-section blockquote {
@@ -539,6 +597,19 @@ h2 {
   max-width: 720px;
   margin: 0 auto;
   line-height: 1.4;
+  position: relative;
+}
+
+.quote-section blockquote::before {
+  content: "\201C";
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.35;
+  line-height: 1;
+  margin-bottom: 4px;
 }
 
 .quote-section cite {
@@ -562,9 +633,6 @@ h2 {
 }
 
 .contact-card {
-  background: var(--bg-panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
   padding: 28px;
 }
 
