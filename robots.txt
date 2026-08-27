@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://linienwerk.github.io/Linienwerk-strohwald/sitemap.xml
