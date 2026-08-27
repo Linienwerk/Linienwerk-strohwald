@@ -119,12 +119,6 @@ a {
   display: none;
 }
 
-.brand-mark {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-}
-
 .brand-name strong {
   color: var(--accent);
 }
