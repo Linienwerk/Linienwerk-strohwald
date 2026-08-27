@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://linienwerk.github.io/Linienwerk-strohwald/</loc>
+    <loc>https://linienwerk-strohwald.de/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://linienwerk.github.io/Linienwerk-strohwald/ueber-mich.html</loc>
+    <loc>https://linienwerk-strohwald.de/ueber-mich.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://linienwerk.github.io/Linienwerk-strohwald/ppwr.html</loc>
+    <loc>https://linienwerk-strohwald.de/ppwr.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://linienwerk.github.io/Linienwerk-strohwald/impressum.html</loc>
+    <loc>https://linienwerk-strohwald.de/impressum.html</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://linienwerk.github.io/Linienwerk-strohwald/datenschutz.html</loc>
+    <loc>https://linienwerk-strohwald.de/datenschutz.html</loc>
     <priority>0.3</priority>
   </url>
 </urlset>
