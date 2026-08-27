@@ -255,6 +255,23 @@ h2 {
   height: 480px;
   background: radial-gradient(ellipse at top, rgba(179, 209, 126, 0.16), transparent 70%);
   pointer-events: none;
+  animation: hero-glow-drift 14s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(240, 220, 195, 0.16) 1px, transparent 1px);
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 30%, black 0%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 65% at 50% 30%, black 0%, transparent 75%);
+  pointer-events: none;
+}
+
+@keyframes hero-glow-drift {
+  from { transform: translate3d(0, 0, 0) scale(1); opacity: 0.85; }
+  to { transform: translate3d(0, 16px, 0) scale(1.06); opacity: 1; }
 }
 
 .hero-inner {
@@ -275,6 +292,35 @@ h2 {
   max-width: 780px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero h1,
+.hero-lead,
+.hero-person,
+.hero-actions {
+  animation: hero-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-lead { animation-delay: 0.08s; }
+.hero-person { animation-delay: 0.16s; }
+.hero-actions { animation-delay: 0.24s; }
+
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before {
+    animation: none;
+  }
+
+  .hero h1,
+  .hero-lead,
+  .hero-person,
+  .hero-actions {
+    animation: none;
+  }
 }
 
 .hero-lead {
@@ -304,6 +350,21 @@ h2 {
   flex-shrink: 0;
   overflow: hidden;
   box-shadow: 0 0 0 4px rgba(179, 209, 126, 0.08);
+}
+
+.hero-person .avatar-ring {
+  animation: avatar-glow-pulse 4s ease-in-out infinite;
+}
+
+@keyframes avatar-glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(179, 209, 126, 0.08); }
+  50% { box-shadow: 0 0 0 7px rgba(179, 209, 126, 0.16); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-person .avatar-ring {
+    animation: none;
+  }
 }
 
 .avatar-ring svg {
