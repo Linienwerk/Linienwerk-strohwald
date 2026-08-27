@@ -672,6 +672,52 @@ h2 {
   margin-top: 8px;
 }
 
+/* PPWR teaser */
+
+.ppwr-teaser {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-panel-alt);
+}
+
+.ppwr-teaser-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  transition: color 0.15s ease;
+}
+
+.ppwr-teaser-link:hover {
+  color: var(--text);
+}
+
+.ppwr-teaser-link:hover .ppwr-teaser-arrow {
+  transform: translateX(3px);
+}
+
+.ppwr-teaser-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(179, 209, 126, 0.14);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.ppwr-teaser-arrow {
+  color: var(--accent);
+  transition: transform 0.15s ease;
+}
+
 /* Reach banner */
 
 .reach-banner {
