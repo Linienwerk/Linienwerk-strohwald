@@ -409,6 +409,45 @@ h2 {
   box-shadow: 0 18px 40px -24px rgba(179, 209, 126, 0.35);
 }
 
+/* PPWR page (standalone) */
+
+.ppwr-timeline {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.ppwr-timeline .process-card ul {
+  margin-bottom: 0;
+}
+
+.ppwr-year {
+  width: auto;
+  min-width: 44px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.ppwr-sources {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+.ppwr-sources a {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.ppwr-sources a:hover {
+  color: var(--accent);
+}
+
+.ppwr-closing {
+  margin-top: 40px;
+}
+
 /* About page (standalone) */
 
 .about-page-title {
