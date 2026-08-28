@@ -391,6 +391,10 @@ h2 {
   margin-top: 2px;
 }
 
+.dot-sep {
+  color: var(--accent);
+}
+
 .hero-actions {
   margin-top: 36px;
   display: flex;
