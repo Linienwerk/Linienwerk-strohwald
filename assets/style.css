@@ -5,12 +5,12 @@
   --text: #2b2318;
   --text-muted: #6e6152;
   --text-faint: #948572;
-  --accent: #5f7d3f;
-  --accent-soft: #b9d38c;
+  --accent: #6b2a28;
+  --accent-soft: #d9b2a8;
   --accent-dark: #f4ece0;
   --bg-rgb: 244, 236, 224;
   --border: rgba(43, 35, 24, 0.12);
-  --border-hover: rgba(95, 125, 63, 0.4);
+  --border-hover: rgba(107, 42, 40, 0.4);
   --max-width: 1100px;
   --radius: 14px;
   font-size: 16px;
@@ -29,9 +29,9 @@ body {
   background-color: var(--bg);
   background-image:
     repeating-linear-gradient(115deg, rgba(43, 35, 24, 0.035) 0px, rgba(43, 35, 24, 0.035) 1px, transparent 1px, transparent 130px),
-    radial-gradient(1100px circle at 12% -8%, rgba(95, 125, 63, 0.20), transparent 60%),
+    radial-gradient(1100px circle at 12% -8%, rgba(107, 42, 40, 0.20), transparent 60%),
     radial-gradient(900px circle at 100% 18%, rgba(196, 120, 70, 0.16), transparent 55%),
-    radial-gradient(850px circle at 12% 78%, rgba(95, 125, 63, 0.13), transparent 55%),
+    radial-gradient(850px circle at 12% 78%, rgba(107, 42, 40, 0.13), transparent 55%),
     radial-gradient(700px circle at 90% 95%, rgba(196, 120, 70, 0.13), transparent 55%);
   background-attachment: fixed, fixed, fixed, fixed, fixed;
   background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
@@ -170,12 +170,12 @@ a {
 .btn-primary {
   background: linear-gradient(135deg, var(--accent-soft), var(--accent));
   color: var(--accent-dark);
-  box-shadow: 0 0 0 1px rgba(179, 209, 126, 0.18), 0 10px 26px -14px rgba(179, 209, 126, 0.55);
+  box-shadow: 0 0 0 1px rgba(107, 42, 40, 0.18), 0 10px 26px -14px rgba(107, 42, 40, 0.55);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 0 0 1px rgba(179, 209, 126, 0.3), 0 14px 34px -12px rgba(179, 209, 126, 0.6);
+  box-shadow: 0 0 0 1px rgba(107, 42, 40, 0.3), 0 14px 34px -12px rgba(107, 42, 40, 0.6);
 }
 
 .btn-small {
@@ -186,14 +186,14 @@ a {
 .btn-outline {
   background: transparent;
   color: var(--accent);
-  border: 1px solid rgba(179, 209, 126, 0.4);
+  border: 1px solid rgba(107, 42, 40, 0.4);
   box-shadow: none;
 }
 
 .btn-outline:hover {
   transform: translateY(-1px);
   border-color: var(--accent);
-  background: rgba(179, 209, 126, 0.08);
+  background: rgba(107, 42, 40, 0.08);
   box-shadow: none;
 }
 
@@ -254,7 +254,7 @@ h2 {
   position: absolute;
   inset: -20% -10% auto -10%;
   height: 480px;
-  background: radial-gradient(ellipse at top, rgba(179, 209, 126, 0.16), transparent 70%);
+  background: radial-gradient(ellipse at top, rgba(107, 42, 40, 0.16), transparent 70%);
   pointer-events: none;
   animation: hero-glow-drift 14s ease-in-out infinite alternate;
 }
@@ -350,7 +350,7 @@ h2 {
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  box-shadow: 0 0 0 4px rgba(179, 209, 126, 0.08);
+  box-shadow: 0 0 0 4px rgba(107, 42, 40, 0.08);
 }
 
 .hero-person .avatar-ring {
@@ -358,8 +358,8 @@ h2 {
 }
 
 @keyframes avatar-glow-pulse {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(179, 209, 126, 0.08); }
-  50% { box-shadow: 0 0 0 7px rgba(179, 209, 126, 0.16); }
+  0%, 100% { box-shadow: 0 0 0 4px rgba(107, 42, 40, 0.08); }
+  50% { box-shadow: 0 0 0 7px rgba(107, 42, 40, 0.16); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -466,7 +466,7 @@ h2 {
 .contact-card:hover {
   transform: translateY(-3px);
   border-color: var(--border-hover);
-  box-shadow: 0 18px 40px -24px rgba(179, 209, 126, 0.35);
+  box-shadow: 0 18px 40px -24px rgba(107, 42, 40, 0.35);
 }
 
 /* PPWR page (standalone) */
@@ -698,7 +698,7 @@ h2 {
   color: var(--accent-dark);
   font-size: 1rem;
   font-weight: 800;
-  box-shadow: 0 8px 22px -8px rgba(179, 209, 126, 0.55), 0 0 0 4px var(--bg-panel);
+  box-shadow: 0 8px 22px -8px rgba(107, 42, 40, 0.55), 0 0 0 4px var(--bg-panel);
   margin-bottom: 18px;
 }
 
@@ -811,7 +811,7 @@ h2 {
 .ppwr-teaser-card:hover {
   transform: translateY(-3px);
   border-color: var(--border-hover);
-  box-shadow: 0 18px 40px -24px rgba(179, 209, 126, 0.35);
+  box-shadow: 0 18px 40px -24px rgba(107, 42, 40, 0.35);
   color: var(--text);
 }
 
@@ -824,7 +824,7 @@ h2 {
   align-items: center;
   padding: 3px 10px;
   border-radius: 999px;
-  background: rgba(179, 209, 126, 0.14);
+  background: rgba(107, 42, 40, 0.14);
   color: var(--accent);
   font-weight: 700;
   font-size: 0.75rem;
@@ -884,7 +884,7 @@ h2 {
   inset: 0 8% auto 8%;
   top: 10%;
   height: 70%;
-  background: radial-gradient(ellipse at center, rgba(179, 209, 126, 0.14), transparent 72%);
+  background: radial-gradient(ellipse at center, rgba(107, 42, 40, 0.14), transparent 72%);
   pointer-events: none;
   z-index: -1;
 }
