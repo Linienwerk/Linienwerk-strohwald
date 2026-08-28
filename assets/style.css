@@ -437,7 +437,8 @@ h2 {
 .about-card,
 .process-card,
 .stat-tile,
-.contact-card {
+.contact-card,
+.ppwr-results-card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0) 40%), var(--bg-panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -446,10 +447,15 @@ h2 {
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.ppwr-results-card {
+  padding: 32px;
+}
+
 .about-card::before,
 .process-card::before,
 .stat-tile::before,
-.contact-card::before {
+.contact-card::before,
+.ppwr-results-card::before {
   content: "";
   position: absolute;
   top: 0;
