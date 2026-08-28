@@ -836,6 +836,27 @@ h2 {
   transition: transform 0.15s ease;
 }
 
+.ppwr-teaser-text-short {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .ppwr-teaser-card {
+    padding: 14px 20px;
+    gap: 8px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .ppwr-teaser-text-full {
+    display: none;
+  }
+
+  .ppwr-teaser-text-short {
+    display: inline;
+  }
+}
+
 /* Reach banner */
 
 .reach-banner {
@@ -925,10 +946,10 @@ h2 {
   content: "\201C";
   display: block;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--accent);
-  opacity: 0.35;
+  opacity: 0.45;
   line-height: 1;
   margin-bottom: 4px;
 }
