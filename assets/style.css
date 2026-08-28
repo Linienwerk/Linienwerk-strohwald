@@ -28,13 +28,12 @@ body {
   margin: 0;
   background-color: var(--bg);
   background-image:
-    repeating-linear-gradient(115deg, rgba(43, 35, 24, 0.035) 0px, rgba(43, 35, 24, 0.035) 1px, transparent 1px, transparent 130px),
     radial-gradient(1100px circle at 12% -8%, rgba(107, 42, 40, 0.20), transparent 60%),
     radial-gradient(900px circle at 100% 18%, rgba(196, 120, 70, 0.16), transparent 55%),
     radial-gradient(850px circle at 12% 78%, rgba(107, 42, 40, 0.13), transparent 55%),
     radial-gradient(700px circle at 90% 95%, rgba(196, 120, 70, 0.13), transparent 55%);
-  background-attachment: fixed, fixed, fixed, fixed, fixed;
-  background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed, fixed;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   color: var(--text);
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.55;
