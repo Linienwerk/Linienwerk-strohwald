@@ -632,17 +632,6 @@ h2 {
   margin-bottom: 0;
 }
 
-.process-block:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  bottom: -48px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(180deg, var(--accent), transparent);
-  opacity: 0.4;
-}
 
 .process-grid {
   position: relative;
@@ -651,23 +640,6 @@ h2 {
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin-bottom: 24px;
-}
-
-.process-grid::before {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent) 20%, var(--accent) 80%, transparent);
-  opacity: 0.4;
-}
-
-@media (max-width: 640px) {
-  .process-grid::before {
-    display: none;
-  }
 }
 
 .process-card {
