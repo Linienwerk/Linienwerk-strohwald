@@ -200,7 +200,7 @@ a {
 /* Section scaffolding */
 
 section {
-  padding: 64px 0;
+  padding: 48px 0;
   border-bottom: 1px solid var(--border);
   border-image: linear-gradient(90deg, transparent, var(--border) 25%, var(--border) 75%, transparent) 1;
 }
@@ -232,7 +232,7 @@ h2 {
 
 .section-intro {
   max-width: 640px;
-  margin: 0 0 48px;
+  margin: 0 0 32px;
 }
 
 .section-intro p {
@@ -243,8 +243,8 @@ h2 {
 /* Hero */
 
 .hero {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
   overflow: hidden;
 }
@@ -325,13 +325,13 @@ h2 {
 }
 
 .hero-lead {
-  margin-top: 18px;
+  margin-top: 14px;
   font-size: 1.15rem;
   color: var(--text-muted);
 }
 
 .hero-person {
-  margin-top: 40px;
+  margin-top: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,7 +396,7 @@ h2 {
 }
 
 .hero-actions {
-  margin-top: 36px;
+  margin-top: 24px;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -773,7 +773,7 @@ h2 {
 /* PPWR teaser */
 
 .ppwr-teaser {
-  padding: 40px 0;
+  padding: 28px 0;
   text-align: center;
 }
 
@@ -839,7 +839,7 @@ h2 {
 /* Reach banner */
 
 .reach-banner {
-  padding: 64px 0;
+  padding: 48px 0;
   text-align: center;
 }
 
@@ -1021,7 +1021,7 @@ h2 {
 /* Legal pages */
 
 .legal-page {
-  padding: 64px 0 96px;
+  padding: 48px 0 72px;
 }
 
 .legal-page h1 {
@@ -1112,6 +1112,11 @@ h2 {
   }
 
   section {
-    padding: 48px 0;
+    padding: 32px 0;
+  }
+
+  .hero {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
