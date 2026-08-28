@@ -168,13 +168,14 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-soft), var(--accent));
+  background: linear-gradient(135deg, #7d332f, #5c211f);
   color: var(--accent-dark);
   box-shadow: 0 0 0 1px rgba(107, 42, 40, 0.18), 0 10px 26px -14px rgba(107, 42, 40, 0.55);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
+  background: linear-gradient(135deg, #8a3b35, #6b2a28);
   box-shadow: 0 0 0 1px rgba(107, 42, 40, 0.3), 0 14px 34px -12px rgba(107, 42, 40, 0.6);
 }
 
