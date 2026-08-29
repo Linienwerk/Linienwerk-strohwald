@@ -327,7 +327,8 @@ h2 {
 .hero-lead {
   margin-top: 14px;
   font-size: 1.15rem;
-  color: var(--text-muted);
+  font-weight: 700;
+  color: var(--text);
 }
 
 .hero-person {
