@@ -1137,6 +1137,12 @@ h2 {
   }
 
   .ppwr-teaser {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 720px) and (hover: none) and (pointer: coarse) {
+  .ppwr-teaser {
     padding: 20px 0 160px;
   }
 }
