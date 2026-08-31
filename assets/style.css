@@ -576,6 +576,21 @@ h2 {
   font-size: 0.98rem;
 }
 
+.employer-logos {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.employer-logo {
+  height: 44px;
+  width: auto;
+  opacity: 0.85;
+}
+
 
 /* Stats */
 
