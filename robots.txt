@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://linienwerk-strohwald.de/sitemap.xml
+Sitemap: https://strohwald-verpackungsentwicklung.de/sitemap.xml
