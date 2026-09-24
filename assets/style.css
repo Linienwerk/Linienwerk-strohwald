@@ -1254,3 +1254,10 @@ h2 {
 .card-page-contacts a:hover {
   color: var(--accent);
 }
+
+.card-page-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--accent);
+}
