@@ -1207,3 +1207,50 @@ h2 {
     justify-content: center;
   }
 }
+
+/* Visitenkarte page */
+
+.card-page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.card-page .hero-person {
+  justify-content: center;
+  margin-top: 0;
+}
+
+.card-page-org {
+  color: var(--text-muted);
+  margin: 20px 0 32px;
+}
+
+.card-page-actions {
+  margin-bottom: 40px;
+}
+
+.card-page-contacts {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-page-contacts li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-page-contacts a {
+  color: var(--text);
+}
+
+.card-page-contacts a:hover {
+  color: var(--accent);
+}

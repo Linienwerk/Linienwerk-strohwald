@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Strohwald;André;;;
+FN:André Strohwald
+ORG:Strohwald Verpackungsentwicklung
+TITLE:Verpackungsentwickler
+EMAIL;TYPE=INTERNET:andre@strohwald-verpackungsentwicklung.de
+URL:https://strohwald-verpackungsentwicklung.de
+ADR;TYPE=WORK:;;Schulhausstrasse 21;Dübendorf;;8600;Schweiz
+END:VCARD
