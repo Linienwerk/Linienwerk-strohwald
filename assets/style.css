@@ -376,8 +376,7 @@ h2 {
   .hero-symptoms,
   .hero-stat,
   .hero-person,
-  .hero-actions,
-  .hero-highlight {
+  .hero-actions {
     animation: none;
   }
 }
@@ -422,6 +421,12 @@ h2 {
 @keyframes hero-highlight-draw {
   from { background-size: 0% 100%; }
   to { background-size: 100% 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-highlight {
+    animation: none;
+  }
 }
 
 .hero-stat {
@@ -1348,7 +1353,7 @@ h2 {
   }
 
   .hero-stat {
-    margin-top: 16px;
+    margin-top: 14px;
     padding: 12px 20px;
   }
 
@@ -1358,11 +1363,27 @@ h2 {
 
   .hero .hero-person {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .hero .hero-person .avatar-ring {
+    width: 68px;
+    height: 68px;
+  }
+
+  .hero-symptoms {
+    margin-top: 14px;
+    gap: 6px;
+  }
+
+  .hero-symptoms li {
+    padding: 4px 12px;
+    font-size: 0.8rem;
   }
 
   .hero-actions {
-    margin-top: 18px;
+    margin-top: 14px;
   }
 
   .ppwr-teaser {
