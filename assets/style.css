@@ -342,10 +342,6 @@ h2 {
   }
 }
 
-.hero .eyebrow {
-  color: var(--text);
-}
-
 .hero-lead {
   margin-top: 14px;
   font-size: 1.15rem;
