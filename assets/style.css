@@ -1223,6 +1223,11 @@ h2 {
     margin-top: 18px;
   }
 
+  .hero .hero-person {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .hero-actions {
     margin-top: 18px;
   }
