@@ -353,9 +353,9 @@ h2 {
   animation: hero-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.hero h1 { animation-delay: 0.06s; }
-.hero-lead { animation-delay: 0.14s; }
-.hero-symptoms { animation-delay: 0.2s; }
+.hero-symptoms { animation-delay: 0.06s; }
+.hero h1 { animation-delay: 0.14s; }
+.hero-lead { animation-delay: 0.2s; }
 .hero-stat { animation-delay: 0.26s; }
 .hero-person { animation-delay: 0.34s; }
 .hero-actions { animation-delay: 0.42s; }
@@ -390,7 +390,7 @@ h2 {
 
 .hero-symptoms {
   list-style: none;
-  margin: 18px auto 0;
+  margin: 4px auto 22px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -1373,7 +1373,7 @@ h2 {
   }
 
   .hero-symptoms {
-    margin-top: 14px;
+    margin: 0 auto 12px;
     gap: 6px;
   }
 
