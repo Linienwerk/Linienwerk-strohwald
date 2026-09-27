@@ -14,7 +14,7 @@
   // Only elements below the fold are hidden, so nothing visible on load flickers.
   var fold = window.innerHeight;
   var targets = document.querySelectorAll(
-    ".stat-tile, .results-list li, .process-card, .faq-item, .reach-card, .contact-card, .about-card, .cta-section .container, .quote-section blockquote"
+    ".stat-tile, .results-list li, .process-card, .faq-item, .contact-card, .about-card, .cta-section .container, .quote-section blockquote"
   );
 
   var observer = new IntersectionObserver(function (entries) {
