@@ -1354,6 +1354,7 @@ h2 {
 
   .hero-lead {
     margin-top: 8px;
+    margin-bottom: 4px;
   }
 
   .hero-stat {
@@ -1368,7 +1369,7 @@ h2 {
   .hero .hero-person {
     flex-direction: column;
     gap: 6px;
-    margin-top: 12px;
+    margin-top: 24px;
   }
 
   .hero .hero-person .avatar-ring {
