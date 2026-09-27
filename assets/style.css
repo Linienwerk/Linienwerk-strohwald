@@ -1340,8 +1340,12 @@ h2 {
   }
 
   .hero {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
+
+  .hero .eyebrow {
+    margin-bottom: 8px;
   }
 
   .hero h1 {
@@ -1349,41 +1353,41 @@ h2 {
   }
 
   .hero-lead {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .hero-stat {
-    margin-top: 14px;
-    padding: 12px 20px;
+    margin-top: 12px;
+    padding: 10px 18px;
   }
 
-  .hero-person {
-    margin-top: 18px;
+  .hero-stat-value {
+    font-size: 1.2rem;
   }
 
   .hero .hero-person {
     flex-direction: column;
-    gap: 8px;
-    margin-top: 14px;
+    gap: 6px;
+    margin-top: 12px;
   }
 
   .hero .hero-person .avatar-ring {
-    width: 68px;
-    height: 68px;
+    width: 60px;
+    height: 60px;
   }
 
   .hero-symptoms {
-    margin: 0 auto 12px;
-    gap: 6px;
+    margin: 0 auto 10px;
+    gap: 5px;
   }
 
   .hero-symptoms li {
-    padding: 4px 12px;
+    padding: 3px 11px;
     font-size: 0.8rem;
   }
 
   .hero-actions {
-    margin-top: 14px;
+    margin-top: 12px;
   }
 
   .ppwr-teaser {
