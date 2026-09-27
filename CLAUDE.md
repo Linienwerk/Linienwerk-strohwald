@@ -38,8 +38,9 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
   („Ergänze …“, „Vereinheitliche …“).
 - **Markenname:** immer „Strohwald Verpackungsentwicklung“. Der frühere Name
   „Linienwerk“ darf nirgends mehr auftauchen.
-- **Cache-Busting:** `style.css?v=…`, `nav.js?v=…` und `effects.js?v=…` sind in jeder HTML-Datei
-  eingebunden. Bei Änderungen an CSS/JS den `v`-Wert in **allen** Seiten gleich erhöhen.
+- **Cache-Busting:** `style.css?v=…` ist in jeder HTML-Datei eingebunden, `nav.js?v=…` und
+  `effects.js?v=…` in Startseite, Über mich und PPWR. Bei Änderungen an CSS/JS den `v`-Wert
+  in **allen** betroffenen Seiten gleich erhöhen.
 - **Header/Footer** sind in jede Seite kopiert (keine Includes). Änderungen an
   Navigation, Footer oder `<head>` in allen Seiten nachziehen.
 - Schrift mit `font-display: optional` und `<link rel="preload">` in jeder Seite (gegen Layout-Shift), nicht auf `swap` ändern.
