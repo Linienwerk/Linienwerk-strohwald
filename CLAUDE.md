@@ -22,6 +22,7 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 |---|---|
 | `index.html` | Startseite: Hero, PPWR-Teaser, Leistungen, Erfolge, Prozess (4 Schritte), FAQ, CTA, Kontakt |
 | `ueber-mich.html` | Lebenslauf, Ausbildung, berufliche Stationen |
+| `leistungen.html` | Sechs Leistungen im Detail (Situation, Vorgehen, Ergebnis); Karten der Startseite verlinken auf die Anker |
 | `ppwr.html` | Landingpage zur EU-Verpackungsverordnung mit Fristen-Zeitplan |
 | `visitenkarte.html` | Digitale Visitenkarte, `noindex`, Ziel eines verteilten QR-Codes |
 | `impressum.html`, `datenschutz.html` | Rechtstexte |
