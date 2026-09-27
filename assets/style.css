@@ -160,6 +160,38 @@ a {
   }
 }
 
+@media (min-width: 721px) {
+  .main-nav a,
+  .brand-name,
+  .site-header .btn.nav-cta {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+  .main-nav {
+    gap: 18px;
+  }
+
+  .site-header .btn.nav-cta {
+    display: none;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 900px) {
+  .main-nav {
+    gap: 12px;
+  }
+
+  .main-nav a {
+    font-size: 0.82rem;
+  }
+
+  .brand-name {
+    font-size: 0.9rem;
+  }
+}
+
 /* Buttons */
 
 .btn {
@@ -514,6 +546,7 @@ h2 {
 .about-card,
 .process-card,
 .stat-tile,
+.service-card,
 .contact-card,
 .ppwr-results-card {
   background: var(--bg-panel);
@@ -532,6 +565,7 @@ h2 {
 .about-card::before,
 .process-card::before,
 .stat-tile::before,
+.service-card::before,
 .contact-card::before,
 .ppwr-results-card::before {
   content: "";
@@ -546,6 +580,7 @@ h2 {
 .about-card:hover,
 .process-card:hover,
 .stat-tile:hover,
+.service-card:hover,
 .contact-card:hover {
   transform: translateY(-3px);
   border-color: rgba(43, 35, 24, 0.2);
@@ -783,6 +818,39 @@ h2 {
   font-size: 0.96rem;
 }
 
+
+/* Services */
+
+.service-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.service-card {
+  padding: 28px;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .service-grid {
+    gap: 14px;
+  }
+
+  .service-card {
+    padding: 22px;
+  }
+}
 
 /* Process steps */
 
