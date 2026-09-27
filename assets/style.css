@@ -272,7 +272,7 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(240, 220, 195, 0.16) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(43, 35, 24, 0.09) 1px, transparent 1px);
   background-size: 26px 26px;
   -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 30%, black 0%, transparent 75%);
   mask-image: radial-gradient(ellipse 70% 65% at 50% 30%, black 0%, transparent 75%);
@@ -298,22 +298,28 @@ h2 {
 
 .hero h1 {
   font-size: clamp(2rem, 4.4vw, 3.1rem);
-  line-height: 1.15;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
   max-width: 780px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.hero .eyebrow,
 .hero h1,
 .hero-lead,
+.hero-stat,
 .hero-person,
 .hero-actions {
-  animation: hero-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: hero-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.hero-lead { animation-delay: 0.08s; }
-.hero-person { animation-delay: 0.16s; }
-.hero-actions { animation-delay: 0.24s; }
+.hero h1 { animation-delay: 0.06s; }
+.hero-lead { animation-delay: 0.14s; }
+.hero-stat { animation-delay: 0.22s; }
+.hero-person { animation-delay: 0.3s; }
+.hero-actions { animation-delay: 0.38s; }
 
 @keyframes hero-rise {
   from { opacity: 0; transform: translateY(16px); }
@@ -325,10 +331,13 @@ h2 {
     animation: none;
   }
 
+  .hero .eyebrow,
   .hero h1,
   .hero-lead,
+  .hero-stat,
   .hero-person,
-  .hero-actions {
+  .hero-actions,
+  .hero-highlight {
     animation: none;
   }
 }
@@ -338,6 +347,21 @@ h2 {
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
+}
+
+.hero-highlight {
+  padding: 0 4px;
+  background-image: linear-gradient(transparent 50%, rgba(185, 211, 140, 0.85) 50%, rgba(185, 211, 140, 0.85) 90%, transparent 90%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: hero-highlight-draw 0.9s cubic-bezier(0.65, 0, 0.35, 1) 0.7s both;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@keyframes hero-highlight-draw {
+  from { background-size: 0% 100%; }
+  to { background-size: 100% 100%; }
 }
 
 .hero-stat {
@@ -351,6 +375,7 @@ h2 {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0) 40%), var(--bg-panel);
   border: 1px solid var(--border);
   text-decoration: none;
+  box-shadow: 0 1px 2px rgba(43, 35, 24, 0.04), 0 16px 36px -22px rgba(43, 35, 24, 0.28);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -1269,4 +1294,27 @@ h2 {
   height: 18px;
   flex-shrink: 0;
   color: var(--accent);
+}
+
+/* Header shadow once scrolled (set by effects.js) */
+
+.site-header {
+  transition: box-shadow 0.3s ease;
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 10px 30px -22px rgba(43, 35, 24, 0.45);
+}
+
+/* Scroll reveal (classes set by effects.js, content stays visible without JS) */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
 }
