@@ -9,8 +9,10 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 - Statisches HTML/CSS/JS ohne Build-Schritt, ohne Paketmanager, ohne Tests.
 - Hosting: GitHub Pages (`CNAME` → `strohwald-verpackungsentwicklung.de`), DNS bei Strato.
 - Lokale Vorschau: `python3 -m http.server` im Repo-Root.
-- Externe Dienste: Google Fonts (Inter), Calendly (Terminbuchung),
-  Cloudflare Web Analytics (Beacon am Seitenende, außer auf der Visitenkarte).
+- Schrift Inter liegt lokal unter `assets/fonts/` (variable Font, Latin-Subset, Lizenz OFL).
+  Keine Google Fonts einbinden, sonst muss die Datenschutzerklärung angepasst werden.
+- Externe Dienste: Calendly (Terminbuchung), Cloudflare Web Analytics
+  (Beacon am Seitenende, außer auf der Visitenkarte).
 
 ## Struktur
 
@@ -37,7 +39,7 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
   eingebunden. Bei Änderungen an CSS/JS den `v`-Wert in **allen** Seiten gleich erhöhen.
 - **Header/Footer** sind in jede Seite kopiert (keine Includes). Änderungen an
   Navigation, Footer oder `<head>` in allen Seiten nachziehen.
-- Schrift wird mit `display=optional` geladen (gegen Layout-Shift), nicht auf `swap` ändern.
+- Schrift mit `font-display: optional` und `<link rel="preload">` in jeder Seite (gegen Layout-Shift), nicht auf `swap` ändern.
 - Farben nur über die Variablen in `:root` (`--accent`, `--bg`, `--text` …), keine neuen Hex-Werte.
 - Neue indexierbare Seiten in `sitemap.xml` eintragen.
 
@@ -54,11 +56,4 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 
 ## Offene Punkte (Stand September 2026)
 
-- `datenschutz.html` nennt die STRATO AG als Hoster; ausgeliefert wird die Seite über
-  GitHub Pages (Strato ist vermutlich nur Domain/DNS).
-- `datenschutz.html` erwähnt Google Fonts nicht, obwohl die Schrift von
-  `fonts.googleapis.com` geladen wird. Alternative: Inter lokal unter `assets/` hosten.
-- `impressum.html` verweist auf § 5 TMG und § 55 RStV (inzwischen DDG bzw. § 18 MStV)
-  und auf die EU-OS-Plattform, die eingestellt wurde.
-- Tippfehler im Alt-Text in `index.html` („Broetchen“).
 - Es gibt keinen `main`-Branch, nur `claude/…`-Branches.
