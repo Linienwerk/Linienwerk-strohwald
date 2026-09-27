@@ -8,6 +8,8 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 
 - Statisches HTML/CSS/JS ohne Build-Schritt, ohne Paketmanager, ohne Tests.
 - Hosting: GitHub Pages (`CNAME` → `strohwald-verpackungsentwicklung.de`), DNS bei Strato.
+- **Veröffentlicht wird der Branch `claude/linienwerk-strohwald-website-xan6l5`.** Änderungen
+  gehen erst online, wenn sie dort landen (Deployment „pages build and deployment“, ca. 1 Minute).
 - Lokale Vorschau: `python3 -m http.server` im Repo-Root.
 - Schrift Inter liegt lokal unter `assets/fonts/` (variable Font, Latin-Subset, Lizenz OFL).
   Keine Google Fonts einbinden, sonst muss die Datenschutzerklärung angepasst werden.
@@ -56,4 +58,5 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 
 ## Offene Punkte (Stand September 2026)
 
-- Es gibt keinen `main`-Branch, nur `claude/…`-Branches.
+- Es gibt keinen `main`-Branch, nur `claude/…`-Branches. Sinnvoll: `main` anlegen und unter
+  *Settings → Pages* als Quelle einstellen.
