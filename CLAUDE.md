@@ -27,7 +27,6 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 | `impressum.html`, `datenschutz.html` | Rechtstexte |
 | `assets/style.css` | Einziges Stylesheet, Farben als CSS-Variablen in `:root` |
 | `assets/nav.js` | Mobiles Menü (Toggle) |
-| `assets/effects.js` | Header-Schatten beim Scrollen, Einblenden beim Scrollen, hochzählende Erfolgszahlen (respektiert „Bewegung reduzieren“) |
 | `assets/andre-strohwald.vcf` | vCard mit eingebettetem Profilfoto (Base64) |
 | `assets/images/` | WebP-Fotos, `og-image.jpg` (1200×630), DMK-Logo |
 | `sitemap.xml`, `robots.txt` | SEO; Visitenkarte bewusst nicht in der Sitemap |
@@ -38,7 +37,7 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
   („Ergänze …“, „Vereinheitliche …“).
 - **Markenname:** immer „Strohwald Verpackungsentwicklung“. Der frühere Name
   „Linienwerk“ darf nirgends mehr auftauchen.
-- **Cache-Busting:** `style.css?v=…`, `nav.js?v=…` und `effects.js?v=…` sind in jeder HTML-Datei
+- **Cache-Busting:** `style.css?v=…` und `nav.js?v=…` sind in jeder HTML-Datei
   eingebunden. Bei Änderungen an CSS/JS den `v`-Wert in **allen** Seiten gleich erhöhen.
 - **Header/Footer** sind in jede Seite kopiert (keine Includes). Änderungen an
   Navigation, Footer oder `<head>` in allen Seiten nachziehen.
