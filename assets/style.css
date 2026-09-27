@@ -950,6 +950,49 @@ h2 {
   }
 }
 
+/* Experience tiles (below stats) */
+
+.experience-title {
+  font-size: 1.05rem;
+  margin: 8px 0 16px;
+}
+
+.experience-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.experience-card {
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(255, 252, 247, 0.55);
+}
+
+.experience-card h4 {
+  margin: 0 0 6px;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.experience-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 720px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .experience-card {
+    padding: 16px 18px;
+  }
+}
+
 /* Process steps */
 
 .process-block {
@@ -1407,6 +1450,12 @@ h2 {
 
   section {
     padding: 56px 0;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    hyphens: auto;
+    -webkit-hyphens: auto;
   }
 
   .hero {
