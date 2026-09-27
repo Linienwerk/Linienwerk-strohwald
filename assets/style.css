@@ -346,6 +346,7 @@ h2 {
 .hero .eyebrow,
 .hero h1,
 .hero-lead,
+.hero-symptoms,
 .hero-stat,
 .hero-person,
 .hero-actions {
@@ -354,9 +355,10 @@ h2 {
 
 .hero h1 { animation-delay: 0.06s; }
 .hero-lead { animation-delay: 0.14s; }
-.hero-stat { animation-delay: 0.22s; }
-.hero-person { animation-delay: 0.3s; }
-.hero-actions { animation-delay: 0.38s; }
+.hero-symptoms { animation-delay: 0.2s; }
+.hero-stat { animation-delay: 0.26s; }
+.hero-person { animation-delay: 0.34s; }
+.hero-actions { animation-delay: 0.42s; }
 
 @keyframes hero-rise {
   from { opacity: 0; transform: translateY(16px); }
@@ -371,6 +373,7 @@ h2 {
   .hero .eyebrow,
   .hero h1,
   .hero-lead,
+  .hero-symptoms,
   .hero-stat,
   .hero-person,
   .hero-actions,
@@ -384,6 +387,26 @@ h2 {
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
+}
+
+.hero-symptoms {
+  list-style: none;
+  margin: 18px auto 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hero-symptoms li {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 252, 247, 0.7);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-style: italic;
 }
 
 .hero-highlight {
