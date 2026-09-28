@@ -46,6 +46,8 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
   Navigation, Footer oder `<head>` in allen Seiten nachziehen.
 - Schrift mit `font-display: optional` und `<link rel="preload">` in jeder Seite (gegen Layout-Shift), nicht auf `swap` ändern.
 - Farben nur über die Variablen in `:root` (`--accent`, `--bg`, `--text` …), keine neuen Hex-Werte.
+  Farbwelt: Hellgrau (`--bg`), Tannengrün (`--accent`) für Buttons, Messing (`--brass`) für die
+  kleinen Zeilen über Überschriften und den Textmarker; Hintergrund einfarbig, im Hero ein feines Raster.
 - Neue indexierbare Seiten in `sitemap.xml` eintragen.
 
 ## Nicht ändern ohne Rücksprache
