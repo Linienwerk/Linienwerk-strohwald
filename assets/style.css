@@ -1516,7 +1516,9 @@ h2 {
 
 .card-main {
   position: relative;
-  padding: 48px 0 64px;
+  padding: 20px 0 64px;
+  min-height: calc(100vh - 57px);
+  min-height: calc(100svh - 57px);
 }
 
 .card-main::before {
