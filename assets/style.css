@@ -1514,48 +1514,89 @@ h2 {
 
 /* Visitenkarte page */
 
-.card-page {
-  max-width: 480px;
+.card-main {
+  position: relative;
+  padding: 48px 0 64px;
+}
+
+.card-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(18, 20, 18, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 20, 18, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 0%, transparent 80%);
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 0%, transparent 80%);
+  pointer-events: none;
+}
+
+.vcard {
+  position: relative;
+  max-width: 440px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 40px 28px 28px;
   text-align: center;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--card-shadow);
 }
 
-.card-page .hero-person {
-  justify-content: center;
-  margin-top: 0;
+.vcard-avatar {
+  width: 112px;
+  height: 112px;
+  margin: 0 auto 20px;
 }
 
-.card-page-org {
+.vcard-eyebrow {
+  margin-bottom: 8px;
+  font-size: 0.72rem;
+}
+
+.vcard-name {
+  font-size: 1.9rem;
+  letter-spacing: -0.02em;
+}
+
+.vcard-role {
+  margin: 4px 0 24px;
   color: var(--text-muted);
-  margin: 20px 0 32px;
 }
 
-.card-page-actions {
-  margin-bottom: 40px;
+.vcard-save {
+  width: 100%;
 }
 
-.card-page-contacts {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 14px;
-  text-align: left;
+.vcard-contacts {
   list-style: none;
-  margin: 0;
+  margin: 24px 0 0;
   padding: 0;
+  border-top: 1px solid var(--border);
+  text-align: left;
 }
 
-.card-page-contacts li {
+.vcard-contacts li {
+  border-bottom: 1px solid var(--border);
+}
+
+.vcard-contacts li:last-child {
+  border-bottom: none;
+}
+
+.vcard-contacts a {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.card-page-contacts a {
+  gap: 12px;
+  padding: 14px 4px;
   color: var(--text);
+  text-decoration: none;
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
 }
 
-.card-page-contacts a:hover {
+.vcard-contacts a:hover {
   color: var(--accent);
 }
 
