@@ -1516,9 +1516,7 @@ h2 {
 
 .card-main {
   position: relative;
-  padding: 28px 0 64px;
-  min-height: 100vh;
-  min-height: 100lvh;
+  padding: 28px 0 calc(40px + env(safe-area-inset-bottom));
 }
 
 .card-main::before {
@@ -1569,6 +1567,74 @@ h2 {
 
 .vcard-save {
   width: 100%;
+}
+
+.vcard-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.vcard-action {
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 11px 12px;
+}
+
+.vcard-action svg {
+  width: 18px;
+  height: 18px;
+}
+
+.vcard-legal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+.vcard-legal a {
+  color: var(--text-faint);
+  text-decoration: none;
+}
+
+.qr-dialog {
+  border: none;
+  border-radius: 24px;
+  padding: 28px 24px 24px;
+  width: min(340px, calc(100vw - 32px));
+  text-align: center;
+  background: var(--bg-panel);
+  color: var(--text);
+  box-shadow: 0 30px 80px -20px rgba(18, 20, 18, 0.5);
+}
+
+.qr-dialog::backdrop {
+  background: rgba(18, 20, 18, 0.55);
+}
+
+.qr-dialog img {
+  width: 100%;
+  height: auto;
+  max-width: 280px;
+  margin: 4px auto 12px;
+}
+
+.qr-hint {
+  margin: 0 0 18px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.qr-dialog .btn {
+  width: 100%;
+  font: inherit;
+  font-weight: 600;
 }
 
 .vcard-contacts {

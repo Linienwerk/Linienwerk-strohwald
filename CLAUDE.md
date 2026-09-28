@@ -30,6 +30,8 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 | `assets/nav.js` | Mobiles Menü (Toggle) |
 | `assets/effects.js` | Header-Schatten beim Scrollen, Einblenden beim Scrollen, hochzählende Erfolgszahlen (respektiert „Bewegung reduzieren“) |
 | `assets/andre-strohwald.vcf` | vCard mit eingebettetem Profilfoto (Base64) |
+| `assets/visitenkarte.js` | Teilen-Button (schickt die vCard, sonst den Link) und QR-Dialog der Visitenkarte |
+| `assets/images/qr-kontakt.svg` | QR-Code mit vCard-Text (ohne Foto); bei geänderten Kontaktdaten neu erzeugen |
 | `assets/images/` | WebP-Fotos, `og-image.jpg` (1200×630), DMK-Logo |
 | `sitemap.xml`, `robots.txt` | SEO; Visitenkarte bewusst nicht in der Sitemap |
 
