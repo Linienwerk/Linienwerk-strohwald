@@ -65,5 +65,7 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 
 ## Offene Punkte (Stand September 2026)
 
+- **DMK-Logo** auf `ueber-mich.html`: Nutzung von DMK freigegeben (Sept. 2026). DMK geht bis ca.
+  Ende 2027 vollständig in Arla auf – dann Text auf „DMK (heute Arla)“ ändern und Logo prüfen.
 - Es gibt keinen `main`-Branch, nur `claude/…`-Branches. Sinnvoll: `main` anlegen und unter
   *Settings → Pages* als Quelle einstellen.
