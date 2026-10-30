@@ -51,3 +51,13 @@
     requestAnimationFrame(step);
   }
 })();
+
+(function () {
+  var band = document.querySelector("[data-marquee]");
+  var toggle = document.querySelector(".material-toggle");
+  if (!band || !toggle) return;
+  toggle.addEventListener("click", function () {
+    var paused = band.classList.toggle("is-paused");
+    toggle.textContent = paused ? "Laufband starten" : "Laufband anhalten";
+  });
+})();
