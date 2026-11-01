@@ -917,7 +917,8 @@ h2 {
   font-size: 0.95rem;
 }
 
-.service-detail-grid p.service-label {
+.service-detail-grid p.service-label,
+.ppwr-results-card p.service-label {
   margin-bottom: 10px;
   color: var(--text-faint);
   font-size: 0.75rem;
