@@ -1796,6 +1796,11 @@ h2 {
   }
 }
 
-.materials-section .section-intro {
+p.section-intro {
   margin-top: 16px;
+}
+
+.anchor-alias {
+  display: block;
+  scroll-margin-top: 96px;
 }
