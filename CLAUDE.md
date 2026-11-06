@@ -57,7 +57,7 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 - **URL `visitenkarte.html`**: Ein bereits verteilter QR-Code zeigt darauf. Inhalte dürfen sich
   ändern, der Pfad nicht.
 - Calendly-Link: `https://calendly.com/strohwald-verpackungsentwicklung/30min`
-- LinkedIn-Link: `https://www.linkedin.com/in/andré-strohwald-752a7868`
+- LinkedIn-Link: `https://www.linkedin.com/in/andr%C3%A9-strohwald-752a7868`
 - E-Mail: `andre@strohwald-verpackungsentwicklung.de`
 - Kontaktadresse: Schulhausstrasse 21, 8600 Dübendorf, Schweiz
 - Zahlen im Bereich „Erfolge“ (250 t Karton, +100 t CO₂, 90 % rPET, siebenstellige
