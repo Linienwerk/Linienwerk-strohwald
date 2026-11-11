@@ -249,10 +249,8 @@ section:last-of-type {
 
 .eyebrow {
   color: var(--brass);
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   margin: 0 0 12px;
 }
 
@@ -290,16 +288,6 @@ h2 {
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: -20% -10% auto -10%;
-  height: 480px;
-  background: radial-gradient(ellipse at top, rgba(31, 77, 58, 0.16), transparent 70%);
-  pointer-events: none;
-  animation: hero-glow-drift 14s ease-in-out infinite alternate;
-}
-
 .hero::after {
   content: "";
   position: absolute;
@@ -311,11 +299,6 @@ h2 {
   -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 30%, black 0%, transparent 75%);
   mask-image: radial-gradient(ellipse 70% 65% at 50% 30%, black 0%, transparent 75%);
   pointer-events: none;
-}
-
-@keyframes hero-glow-drift {
-  from { transform: translate3d(0, 0, 0) scale(1); opacity: 0.85; }
-  to { transform: translate3d(0, 16px, 0) scale(1.06); opacity: 1; }
 }
 
 .hero-inner {
@@ -363,10 +346,6 @@ h2 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero::before {
-    animation: none;
-  }
-
   .hero .eyebrow,
   .hero h1,
   .hero-lead,
@@ -405,27 +384,6 @@ h2 {
   font-style: italic;
 }
 
-.hero-highlight {
-  padding: 0 4px;
-  background-image: linear-gradient(transparent 50%, rgba(176, 141, 87, 0.38) 50%, rgba(176, 141, 87, 0.38) 90%, transparent 90%);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  animation: hero-highlight-draw 0.9s cubic-bezier(0.65, 0, 0.35, 1) 0.7s both;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
-@keyframes hero-highlight-draw {
-  from { background-size: 0% 100%; }
-  to { background-size: 100% 100%; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-highlight {
-    animation: none;
-  }
-}
-
 .hero-stat {
   margin-top: 20px;
   display: inline-flex;
@@ -457,11 +415,6 @@ h2 {
 .hero-stat-label {
   font-size: 0.85rem;
   color: var(--text-muted);
-}
-
-.hero-stat-arrow {
-  color: var(--accent);
-  font-weight: 700;
 }
 
 .hero-person {
@@ -686,10 +639,6 @@ h2 {
 
 .about-card {
   padding: 32px;
-}
-
-.about-card .eyebrow {
-  margin-bottom: 6px;
 }
 
 .about-card h3 {
@@ -1714,7 +1663,8 @@ h2 {
 .material-track {
   display: flex;
   width: max-content;
-  animation: material-scroll 40s linear infinite;
+  animation: material-scroll 120s linear infinite;
+  will-change: transform;
 }
 
 .material-band:hover .material-track,
