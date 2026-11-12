@@ -2,7 +2,7 @@
 
 Website von **Strohwald Verpackungsentwicklung** (André Strohwald) unter
 https://strohwald-verpackungsentwicklung.de. Beratungsangebot für
-Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschland.
+Verpackungsentwicklung bei Lebensmittelherstellern im deutschsprachigen Raum (ohne feste regionale Begrenzung, Stand 07.10.2026).
 
 ## Stack
 
@@ -26,6 +26,7 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 | `ppwr.html` | Landingpage zur EU-Verpackungsverordnung mit Fristen-Zeitplan |
 | `visitenkarte.html` | Digitale Visitenkarte, `noindex`, Ziel eines verteilten QR-Codes |
 | `impressum.html`, `datenschutz.html` | Rechtstexte |
+| `404.html` | Fehlerseite von GitHub Pages, `noindex`, nur absolute Pfade (`/assets/…`), weil sie unter beliebigen Adressen ausgeliefert wird |
 | `assets/style.css` | Einziges Stylesheet, Farben als CSS-Variablen in `:root` |
 | `assets/nav.js` | Mobiles Menü (Toggle) |
 | `assets/effects.js` | Header-Schatten beim Scrollen, Einblenden beim Scrollen, hochzählende Erfolgszahlen (respektiert „Bewegung reduzieren“) |
@@ -53,6 +54,7 @@ Verpackungsentwicklung bei Lebensmittelherstellern in Nord- und Mitteldeutschlan
 - Keine kleinen Zeilen in Großbuchstaben über Überschriften, kein Textmarker, kein Leuchtfleck, keine Pfeile an
   Link-Texten, keine Gedankenstriche im sichtbaren Text (Andrés Entscheidung 11.11.2026, Prüfung gegen das Regelwerk Hallmark).
 - Neue indexierbare Seiten in `sitemap.xml` eintragen.
+- Jede indexierbare Seite hat `<link rel="canonical">` auf die Adresse ohne www (gleich `og:url`).
 
 ## Nicht ändern ohne Rücksprache
 

@@ -496,28 +496,6 @@ h2 {
   font-size: 1rem;
 }
 
-/* Line divider motif */
-
-.line-divider {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0 0 44px;
-  color: var(--text-faint);
-}
-
-.line-divider .line {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, var(--accent), transparent);
-  opacity: 0.5;
-}
-
-.line-divider span {
-  font-size: 0.8rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
 
 /* Card surfaces (about, process, stats, contact) */
 
@@ -641,6 +619,7 @@ h2 {
   padding: 32px;
 }
 
+.about-card h2,
 .about-card h3 {
   font-size: 1.3rem;
   margin-bottom: 20px;
@@ -869,11 +848,9 @@ h2 {
 .service-detail-grid p.service-label,
 .ppwr-results-card p.service-label {
   margin-bottom: 10px;
-  color: var(--text-faint);
-  font-size: 0.75rem;
+  color: var(--text);
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 @media (max-width: 880px) {
@@ -1297,6 +1274,8 @@ h2 {
 }
 
 .footer-links a {
+  display: inline-block;
+  padding: 8px 0;
   text-decoration: none;
   color: var(--text-faint);
   transition: color 0.15s ease;
@@ -1820,5 +1799,12 @@ p.section-intro {
     white-space: nowrap;
     padding: 5px 11px;
     font-size: 0.8rem;
+  }
+}
+
+/* Einsparung steht am Handy direkt darunter in den Erfolgen, im Hero nur ab zweispaltigem Layout */
+@media (max-width: 959px) {
+  .hero-stat {
+    display: none;
   }
 }
