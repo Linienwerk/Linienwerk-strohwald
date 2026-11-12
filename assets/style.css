@@ -1759,3 +1759,53 @@ p.section-intro {
   display: block;
   scroll-margin-top: 96px;
 }
+
+/* Hero mit großem Foto */
+.hero-foto {
+  margin: 0;
+}
+
+.hero-foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+}
+
+
+@media (min-width: 960px) {
+  .hero-inner--foto {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    align-items: center;
+    justify-items: stretch;
+    text-align: left;
+    gap: 56px;
+  }
+
+  .hero-inner--foto .hero-symptoms,
+  .hero-inner--foto .hero-actions {
+    justify-content: flex-start;
+  }
+
+  .hero .hero-inner--foto h1 {
+    font-size: clamp(2rem, 2.9vw, 2.75rem);
+  }
+}
+
+.hero-foto--linie img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+@media (min-width: 960px) {
+  .hero-inner--foto .hero-person {
+    justify-content: flex-start;
+  }
+
+  .hero-foto--linie {
+    max-width: 460px;
+    justify-self: end;
+  }
+}
