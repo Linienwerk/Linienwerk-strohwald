@@ -609,6 +609,17 @@ h2 {
   margin: 14px 0 56px;
 }
 
+.about-story {
+  max-width: 680px;
+  margin: -32px 0 48px;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.about-card h2.about-subhead {
+  margin-top: 32px;
+}
+
 .about-grid {
   display: grid;
   gap: 32px;
