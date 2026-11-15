@@ -1651,7 +1651,7 @@ h2 {
   transform: none;
 }
 
-/* Packmittel: feste Reihe, die Symbole bewegen sich nacheinander (SMIL in index.html) */
+/* Packmittel: feste Kacheln (Desktop 5 + 4, Handy 3 x 3), die Symbole bewegen sich nacheinander (SMIL in index.html, Erzeuger im privaten Repo) */
 .material-band {
   margin-top: 36px;
 }
@@ -1662,7 +1662,7 @@ h2 {
   justify-content: center;
   gap: 16px;
   list-style: none;
-  max-width: var(--max-width);
+  max-width: 772px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -1697,6 +1697,16 @@ h2 {
 .material-chip .mc-dot {
   fill: var(--accent);
   stroke: none;
+}
+
+.material-chip span {
+  text-align: center;
+  line-height: 1.25;
+  hyphens: manual;
+}
+
+.material-chip .mc-thin {
+  stroke-width: 1.1;
 }
 
 .material-chip .mc-print {

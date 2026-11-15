@@ -76,7 +76,7 @@
       userPaused = !userPaused;
       if (userPaused) {
         // auf den nächsten Ruhepunkt springen, damit kein Symbol mitten in der Bewegung stehen bleibt
-        var t = svgs[0].getCurrentTime(), slot = 3.2, base = 0.8, cycle = 22.4;
+        var t = svgs[0].getCurrentTime(), slot = 3.2, base = 0.8, cycle = 28.8;
         var r = (Math.ceil((t - base) / slot) * slot + base) % cycle;
         svgs.forEach(function (s) { s.setCurrentTime(r); });
       }
