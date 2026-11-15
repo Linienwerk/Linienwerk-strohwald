@@ -1673,6 +1673,7 @@ h2 {
   align-items: center;
   gap: 10px;
   width: 132px;
+  min-height: 136px;
   padding: 20px 12px 16px;
   background: var(--bg-panel);
   border: 1px solid var(--border);
@@ -1738,6 +1739,7 @@ h2 {
 
   .material-chip {
     width: 104px;
+    min-height: 120px;
     padding: 16px 8px 14px;
     font-size: 0.8rem;
   }
