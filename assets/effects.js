@@ -70,10 +70,18 @@
   if ("IntersectionObserver" in window) {
     new IntersectionObserver(function (e) { visible = e[0].isIntersecting; apply(); }, { threshold: 0.3 }).observe(band);
   } else { visible = true; apply(); }
-  if (toggle) toggle.addEventListener("click", function () {
-    userPaused = !userPaused;
-    toggle.textContent = userPaused ? "Animation starten" : "Animation anhalten";
-    toggle.setAttribute("aria-pressed", userPaused ? "true" : "false");
-    apply();
-  });
+  if (toggle) {
+    toggle.hidden = false;
+    toggle.addEventListener("click", function () {
+      userPaused = !userPaused;
+      if (userPaused) {
+        // auf den nächsten Ruhepunkt springen, damit kein Symbol mitten in der Bewegung stehen bleibt
+        var t = svgs[0].getCurrentTime(), slot = 3.2, base = 0.8, cycle = 22.4;
+        var r = (Math.ceil((t - base) / slot) * slot + base) % cycle;
+        svgs.forEach(function (s) { s.setCurrentTime(r); });
+      }
+      toggle.textContent = userPaused ? "Animation starten" : "Animation anhalten";
+      apply();
+    });
+  }
 })();
