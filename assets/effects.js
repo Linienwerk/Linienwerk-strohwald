@@ -53,11 +53,27 @@
 })();
 
 (function () {
-  var band = document.querySelector("[data-marquee]");
+  // Packmittel-Symbole: laufen nur, wenn sichtbar; still bei "Bewegung reduzieren" oder nach Klick auf Anhalten
+  var band = document.querySelector("[data-material-anim]");
+  if (!band) return;
+  var svgs = Array.prototype.slice.call(band.querySelectorAll("svg"));
+  if (!svgs.length || typeof svgs[0].pauseAnimations !== "function") return;
   var toggle = document.querySelector(".material-toggle");
-  if (!band || !toggle) return;
-  toggle.addEventListener("click", function () {
-    var paused = band.classList.toggle("is-paused");
-    toggle.textContent = paused ? "Laufband starten" : "Laufband anhalten";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var visible = false, userPaused = false;
+  function apply() {
+    var run = visible && !userPaused && !reduce;
+    svgs.forEach(function (s) { if (run) s.unpauseAnimations(); else s.pauseAnimations(); });
+  }
+  svgs.forEach(function (s) { s.pauseAnimations(); s.setCurrentTime(0); });
+  if (reduce) return;
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (e) { visible = e[0].isIntersecting; apply(); }, { threshold: 0.3 }).observe(band);
+  } else { visible = true; apply(); }
+  if (toggle) toggle.addEventListener("click", function () {
+    userPaused = !userPaused;
+    toggle.textContent = userPaused ? "Animation starten" : "Animation anhalten";
+    toggle.setAttribute("aria-pressed", userPaused ? "true" : "false");
+    apply();
   });
 })();

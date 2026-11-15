@@ -1651,33 +1651,20 @@ h2 {
   transform: none;
 }
 
-/* Packmittel-Laufband */
+/* Packmittel: feste Reihe, die Symbole bewegen sich nacheinander (SMIL in index.html) */
 .material-band {
-  overflow: hidden;
   margin-top: 36px;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
-
-.material-track {
-  display: flex;
-  width: max-content;
-  animation: material-scroll 120s linear infinite;
-  will-change: transform;
-}
-
-.material-band:hover .material-track,
-.material-band:focus-within .material-track,
-.material-band.is-paused .material-track {
-  animation-play-state: paused;
 }
 
 .material-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   list-style: none;
-  margin: 0;
-  padding: 0 8px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .material-chip {
@@ -1699,6 +1686,7 @@ h2 {
 .material-chip svg {
   width: 48px;
   height: 48px;
+  overflow: visible;
   fill: none;
   stroke: var(--accent);
   stroke-width: 1.6;
@@ -1706,8 +1694,19 @@ h2 {
   stroke-linejoin: round;
 }
 
+.material-chip .mc-dot {
+  fill: var(--accent);
+  stroke: none;
+}
+
+.material-chip .mc-print {
+  stroke-width: 1;
+  opacity: 0.55;
+}
+
 .material-controls {
   margin-top: 16px;
+  text-align: center;
 }
 
 .material-toggle {
@@ -1722,29 +1721,24 @@ h2 {
   cursor: pointer;
 }
 
-@keyframes material-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+@media (max-width: 480px) {
+  .material-list {
+    gap: 12px;
+  }
+
+  .material-chip {
+    width: 104px;
+    padding: 16px 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .material-chip svg {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .material-band {
-    -webkit-mask-image: none;
-    mask-image: none;
-  }
-
-  .material-track {
-    animation: none;
-    width: auto;
-  }
-
-  .material-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 20px;
-  }
-
-  .material-list[aria-hidden="true"],
   .material-controls {
     display: none;
   }
