@@ -1836,8 +1836,8 @@ p.section-intro {
 }
 
 /* Ergebnisse auf Grün (André 25.11.2026, nach Groks Entwurf) */
-.erfolge-gruen { background: var(--accent); color: #fff; border-bottom: none; }
-.erfolge-gruen h2 { color: #fff; }
+.erfolge-gruen { background: var(--accent); color: var(--accent-dark); border-bottom: none; }
+.erfolge-gruen h2 { color: var(--accent-dark); }
 .erfolge-gruen .section-intro { color: rgba(255, 255, 255, 0.78); }
 .erfolge-gruen .stat-tile,
 .erfolge-gruen .stat-tile-feature {
@@ -1848,7 +1848,7 @@ p.section-intro {
 .erfolge-gruen .stat-tile::before { background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent); }
 .erfolge-gruen .stat-tile:hover { border-color: rgba(255, 255, 255, 0.3); box-shadow: none; }
 .erfolge-gruen .stat-tile .stat-value,
-.erfolge-gruen .stat-tile-feature .stat-value { color: #fff; }
+.erfolge-gruen .stat-tile-feature .stat-value { color: var(--accent-dark); }
 .erfolge-gruen .stat-label { color: rgba(255, 255, 255, 0.78); }
 .erfolge-gruen .stats-grid { margin-bottom: 0; }
 .hero-intro { margin: 20px 0 0; color: var(--text-muted); font-size: 1.05rem; max-width: 34em; }
