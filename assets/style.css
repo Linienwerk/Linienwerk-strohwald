@@ -1791,7 +1791,6 @@ p.section-intro {
     gap: 56px;
   }
 
-  .hero-inner--foto .hero-symptoms,
   .hero-inner--foto .hero-actions {
     justify-content: flex-start;
   }
@@ -1815,19 +1814,33 @@ p.section-intro {
   .hero-foto--linie {
     max-width: 460px;
     justify-self: end;
+    align-self: end;
+  }
+
+  .hero:has(.hero-inner--foto) {
+    padding-top: 48px;
+    padding-bottom: 104px;
+  }
+
+  .hero-inner--foto > .hero-symptoms {
+    grid-column: 1 / -1;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 -16px;
+  }
+}
+
+@media (max-width: 959px) {
+  .hero-inner--foto > .hero-symptoms {
+    margin-bottom: -30px;
   }
 }
 
 @media (min-width: 1100px) {
-  .hero-inner--foto .hero-symptoms {
-    flex-wrap: nowrap;
-    gap: 6px;
-  }
-
   .hero-inner--foto .hero-symptoms li {
     white-space: nowrap;
-    padding: 5px 11px;
-    font-size: 0.8rem;
+    padding: 9px 18px;
+    font-size: 1rem;
   }
 }
 
