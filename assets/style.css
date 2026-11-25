@@ -536,9 +536,20 @@ h2 {
 
 .cta-buttons .btn,
 .hero-actions .btn {
-  width: 15rem;
+  width: 16.5rem;
+  white-space: nowrap;
   justify-content: center;
   text-align: center;
+}
+
+/* Strichsymbole in den Kontaktbuttons (Umschlag, Kalender) */
+.btn-icon {
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Rahmen ausgleichen, damit beide Buttons gleich hoch sind */
