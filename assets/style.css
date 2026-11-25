@@ -1956,3 +1956,5 @@ section .eyebrow {
 .v2-numbered li { border-left: none; border-right: none; padding-left: 0; padding-right: 0; }
 
 .v2-sand .material-controls { margin-top: 12px; text-align: center; }
+.v2-steps img.v2-img-top { object-position: center 18%; }
+.v2-steps img { height: auto; }
