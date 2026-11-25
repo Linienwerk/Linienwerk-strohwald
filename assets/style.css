@@ -503,12 +503,6 @@ h2 {
   line-height: 1.6;
 }
 
-.cta-alt .cta-mail {
-  color: var(--text);
-  user-select: all;
-  overflow-wrap: anywhere;
-}
-
 .cta-alt a {
   color: var(--accent);
   font-weight: 600;
