@@ -1851,4 +1851,3 @@ p.section-intro {
 .erfolge-gruen .stat-tile-feature .stat-value { color: var(--accent-dark); }
 .erfolge-gruen .stat-label { color: rgba(255, 255, 255, 0.78); }
 .erfolge-gruen .stats-grid { margin-bottom: 0; }
-.hero-intro { margin: 20px 0 0; color: var(--text-muted); font-size: 1.05rem; max-width: 34em; }
