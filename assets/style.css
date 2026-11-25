@@ -494,9 +494,36 @@ h2 {
   justify-content: center;
 }
 
-.hero-actions .hint {
+
+/* Zweiter Kontaktweg unter dem E-Mail-Button */
+.cta-alt {
+  margin: 14px 0 0;
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cta-alt .cta-mail {
+  color: var(--text);
+  user-select: all;
+  overflow-wrap: anywhere;
+}
+
+.cta-alt a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cta-section .cta-alt {
+  margin: 16px auto 0;
+  max-width: 560px;
+}
+
+.hero-actions .cta-alt {
+  flex-basis: 100%;
+  margin-top: 0;
 }
 
 
