@@ -328,6 +328,7 @@ h2 {
 .hero-lead,
 .hero-symptoms,
 .hero-stat,
+.hero-intro,
 .hero-person,
 .hero-actions {
   animation: hero-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -337,6 +338,7 @@ h2 {
 .hero h1 { animation-delay: 0.14s; }
 .hero-lead { animation-delay: 0.2s; }
 .hero-stat { animation-delay: 0.26s; }
+.hero-intro { animation-delay: 0.27s; }
 .hero-person { animation-delay: 0.34s; }
 .hero-actions { animation-delay: 0.42s; }
 
@@ -351,6 +353,7 @@ h2 {
   .hero-lead,
   .hero-symptoms,
   .hero-stat,
+  .hero-intro,
   .hero-person,
   .hero-actions {
     animation: none;
@@ -1837,7 +1840,7 @@ p.section-intro {
 
 /* Ergebnisse auf Grün (André 25.11.2026, nach Groks Entwurf) */
 .erfolge-gruen { background: var(--accent); color: var(--accent-dark); border-bottom: none; }
-.erfolge-gruen h2 { color: var(--accent-dark); }
+.erfolge-gruen h2 { color: var(--accent-dark); hyphens: manual; -webkit-hyphens: manual; }
 .erfolge-gruen .section-intro { color: rgba(255, 255, 255, 0.78); }
 .erfolge-gruen .stat-tile,
 .erfolge-gruen .stat-tile-feature {
@@ -1851,3 +1854,4 @@ p.section-intro {
 .erfolge-gruen .stat-tile-feature .stat-value { color: var(--accent-dark); }
 .erfolge-gruen .stat-label { color: rgba(255, 255, 255, 0.78); }
 .erfolge-gruen .stats-grid { margin-bottom: 0; }
+.hero-intro { margin: 20px 0 0; color: var(--text-muted); font-size: 1.05rem; max-width: 34em; }
