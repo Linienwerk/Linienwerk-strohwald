@@ -1510,17 +1510,6 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .hero .hero-person {
-    flex-direction: column;
-    gap: 6px;
-    margin-top: 24px;
-  }
-
-  .hero .hero-person .avatar-ring {
-    width: 60px;
-    height: 60px;
-  }
-
   .hero-symptoms {
     margin: 0 auto 10px;
     gap: 5px;
@@ -1879,10 +1868,6 @@ p.section-intro {
 }
 
 @media (min-width: 960px) {
-  .hero-inner--foto .hero-person {
-    justify-content: flex-start;
-  }
-
   .hero-foto--linie {
     max-width: 460px;
     justify-self: end;
