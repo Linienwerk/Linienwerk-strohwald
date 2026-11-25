@@ -51,6 +51,7 @@ Verpackungsentwicklung bei Lebensmittelherstellern im deutschsprachigen Raum (oh
 - Farben nur über die Variablen in `:root` (`--accent`, `--bg`, `--text` …), keine neuen Hex-Werte.
   Farbwelt: Hellgrau (`--bg`), Tannengrün (`--accent`) für Buttons, Messing (`--brass`) für die
   Zielgruppen-Zeile im Hero; Hintergrund einfarbig, im Hero ein feines Raster.
+- Ausnahme (André 25.11.2026, Design v2 auf Branch `claude/design-v2`): kleine Zeilen in Großbuchstaben über Überschriften der Startseite „erstmal“ wieder erlaubt, ebenso Sand-Hintergrund (`--sand`) und dunkelgrüne Abschnitte. Sonst gilt:
 - Keine kleinen Zeilen in Großbuchstaben über Überschriften, kein Textmarker, kein Leuchtfleck, keine Pfeile an
   Link-Texten, keine Gedankenstriche im sichtbaren Text (Andrés Entscheidung 11.11.2026, Prüfung gegen das Regelwerk Hallmark).
 - Neue indexierbare Seiten in `sitemap.xml` eintragen.

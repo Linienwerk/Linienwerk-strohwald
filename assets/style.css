@@ -1838,6 +1838,8 @@ p.section-intro {
 /* ===== Design v2 (Entwurf 25.11.2026) ===== */
 :root {
   --sand: #f3eee4;
+  --sand-stripe: #ebe3d3;
+  --brass-light: #d9c08f;
   --sand-line: rgba(154, 122, 69, 0.22);
   --on-dark: rgba(255, 255, 255, 0.78);
 }
@@ -1862,7 +1864,7 @@ section .eyebrow {
 .v2-dark { background: var(--accent); color: #fff; border-bottom: none; }
 .v2-dark h2 { color: #fff; }
 .v2-dark .section-intro { color: var(--on-dark); }
-.v2-dark .eyebrow { color: #d9c08f; }
+.v2-dark .eyebrow { color: var(--brass-light); }
 .v2-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 40px; border-top: 1px solid rgba(255, 255, 255, 0.18); }
 .v2-stats .stat-tile { padding: 28px 24px 8px 0; background: none; border: none; box-shadow: none; }
 .v2-stats .stat-value { font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 700; color: #fff; line-height: 1.15; }
@@ -1879,7 +1881,7 @@ section .eyebrow {
 .v2-ph {
   display: flex; align-items: flex-end; min-height: 220px; padding: 16px;
   border-radius: var(--radius); border: 1px dashed var(--sand-line);
-  background: repeating-linear-gradient(45deg, var(--sand), var(--sand) 12px, #ebe3d3 12px, #ebe3d3 24px);
+  background: repeating-linear-gradient(45deg, var(--sand), var(--sand) 12px, var(--sand-stripe) 12px, var(--sand-stripe) 24px);
 }
 .v2-ph span { background: rgba(255, 255, 255, 0.85); color: var(--text-muted); font-size: 0.8rem; padding: 6px 10px; border-radius: 8px; }
 .v2-ph-tall { min-height: 440px; }
@@ -1923,7 +1925,7 @@ section .eyebrow {
 .v2-btn-light:hover { transform: translateY(-1px); }
 .v2-contact-card { border: 1px solid rgba(255, 255, 255, 0.2); border-radius: var(--radius); padding: 20px; }
 .v2-contact-card dl { margin: 0; }
-.v2-contact-card dt { color: #d9c08f; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.68rem; font-weight: 700; margin-top: 14px; }
+.v2-contact-card dt { color: var(--brass-light); text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.68rem; font-weight: 700; margin-top: 14px; }
 .v2-contact-card dd { margin: 4px 0 0; color: #fff; }
 .v2-contact-card a { color: #fff; }
 
@@ -1952,3 +1954,5 @@ section .eyebrow {
 .v2-steps .v2-badge { margin: 10px 0 0; width: fit-content; }
 .v2-steps p { flex: 1 0 auto; }
 .v2-numbered li { border-left: none; border-right: none; padding-left: 0; padding-right: 0; }
+
+.v2-sand .material-controls { margin-top: 12px; text-align: center; }
